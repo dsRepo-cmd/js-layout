@@ -11,6 +11,8 @@ export const createElement = (tag, className, text) => {
   return elem
 }
 
+// HEADER_BUTTON_LIST=========================
+
 const HEADER_BUTTON_LIST = [
   {
     width: 24,
@@ -23,6 +25,8 @@ const HEADER_BUTTON_LIST = [
     src: '/img/header__avatar.png',
   },
 ]
+
+// ===============================
 
 export const createHeader = () => {
   const header = createElement('header', 'header')
@@ -43,7 +47,7 @@ export const createHeader = () => {
   return header
 }
 
-// ===============================
+// POST_LIST=========================
 
 const POST_LIST = [
   {
@@ -120,11 +124,14 @@ export const createPost = () => {
   return postList
 }
 
-// ===============================
+// NAV_LIST=========================
+
 const NAV_LIST = [
   { text: 'База знань', active: false },
   { text: 'Інформація', active: true },
 ]
+
+// ===============================
 
 export const createNav = () => {
   const nav = createElement('nav', 'nav')
@@ -142,10 +149,11 @@ export const createNav = () => {
 
   return nav
 }
+// HERO===========================
 
 const HERO = {
   img: {
-    width: 343,
+    width: 352,
     height: 160,
     src: '/img/hero.png',
   },
@@ -155,6 +163,7 @@ const HERO = {
   являющуюся результатом решения предыдущих задач.`,
   button: `Перейти до ком'юніті у Телеграм`,
 }
+// ===============================
 
 export const createHero = () => {
   const hero = createElement('main', 'hero')

@@ -15,8 +15,7 @@ const nav = createNav()
 
 const hero = createHero()
 
-// ===============================
-
+// link===========================
 const link = createElement('a', 'link', 'Blog')
 link.href = '/'
 // ===============================
