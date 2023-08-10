@@ -91,4 +91,6 @@ const post = createPost()
 const link = createElement('a', 'link', 'Community')
 link.href = '/community'
 
+// ===============================
+
 page.append(header, title, post, link)

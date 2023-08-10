@@ -32,7 +32,7 @@ const createNav = () => {
   return nav
 }
 
-const navBlock = createNav()
+const nav = createNav()
 
 // ===============================
 
@@ -52,38 +52,34 @@ const HERO = {
 const createHero = () => {
   const hero = createElement('main', 'hero')
 
-  const imgHero = createElement('img', 'hero__img')
+  const img = createElement('img', 'hero__img')
   Object.entries(HERO.img).forEach(([key, value]) => {
-    imgHero[key] = value
+    img[key] = value
   })
 
-  const titleHero = createElement(
+  const title = createElement(
     'h2',
     'hero__title',
     HERO.title,
   )
 
-  const infoHero = createElement(
-    'p',
-    'hero__info',
-    HERO.info,
-  )
+  const info = createElement('p', 'hero__info', HERO.info)
 
-  const buttonHero = createElement(
+  const button = createElement(
     'button',
     'hero__button',
     HERO.button,
   )
 
-  hero.append(imgHero, titleHero, infoHero, buttonHero)
+  hero.append(img, title, info, button)
 
   return hero
 }
 
-const heroBlock = createHero()
+const hero = createHero()
 // ===============================
 const link = createElement('a', 'link', 'Blog')
 link.href = '/'
 // ===============================
 
-page.append(header, title, navBlock, heroBlock, link)
+page.append(header, title, nav, hero, link)
