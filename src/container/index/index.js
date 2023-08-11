@@ -2,9 +2,12 @@ import {
   createElement,
   createHeader,
   createPost,
+  createStatusbar,
 } from '../../script/layout'
 
 const page = document.querySelector('.page')
+
+const statusBar = createStatusbar()
 
 const header = createHeader()
 
@@ -12,9 +15,6 @@ const title = createElement('h1', 'title', 'Мій блог')
 
 const post = createPost()
 
-// link ===========================
-const link = createElement('a', 'link', 'Community')
-link.href = '/community'
-// ===============================
+const line = createElement('div', 'footer-line')
 
-page.append(header, title, post, link)
+page.append(statusBar, header, title, post, line)

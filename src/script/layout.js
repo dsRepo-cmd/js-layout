@@ -11,6 +11,18 @@ export const createElement = (tag, className, text) => {
   return elem
 }
 
+// Status bar=========================
+export const createStatusbar = () => {
+  const statusBar = createElement('div', 'status-bar')
+  const time = createElement('img', 'status-bar__time')
+  time.src = '/img/time.png'
+  const group = createElement('img', 'status-bar__group')
+  group.src = '/img/group.png'
+
+  statusBar.append(time, group)
+
+  return statusBar
+}
 // HEADER_BUTTON_LIST=========================
 
 const HEADER_BUTTON_LIST = [
@@ -153,7 +165,7 @@ export const createNav = () => {
 
 const HERO = {
   img: {
-    width: 352,
+    width: 348,
     height: 160,
     src: '/img/hero.png',
   },

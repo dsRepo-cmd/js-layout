@@ -3,9 +3,12 @@ import {
   createHeader,
   createNav,
   createHero,
+  createStatusbar,
 } from '../../script/layout'
 
 const page = document.querySelector('.page')
+
+const statusBar = createStatusbar()
 
 const header = createHeader()
 
@@ -15,9 +18,6 @@ const nav = createNav()
 
 const hero = createHero()
 
-// link===========================
-const link = createElement('a', 'link', 'Blog')
-link.href = '/'
-// ===============================
+const line = createElement('div', 'footer-line')
 
-page.append(header, title, nav, hero, link)
+page.append(statusBar, header, title, nav, hero, line)

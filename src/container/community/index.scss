@@ -1,11 +1,21 @@
 .page {
-  padding: 24px;
+  padding: 24px 24px 12px 24px;
   max-width: 400px;
+  height: 820px;
+  max-height: 820px;
   margin: 0 auto;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 10px 24px 30px;
   gap: 32px;
+
+  border: 1px solid #121212;
+  border-radius: 20px;
+}
+.status-bar {
+  padding: 0 0 0 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -83,4 +93,11 @@
 .link {
   margin-top: 48px;
   text-decoration: none;
+}
+
+.footer-line {
+  width: 150px;
+  border-bottom: 5px solid #121212;
+  border-radius: 5px;
+  justify-self: center;
 }
